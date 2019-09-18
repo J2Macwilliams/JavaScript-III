@@ -40,8 +40,20 @@ function Spirit(ferments){
 let ale = new Spirit('An original gravity reading of 1.055, and a final gravity of 1.010, a 5.8% abv ale should be produced.');
 
 console.log(ale.activity)
-
+// code example for New Binding
 
 // Principle 4
+function dish(){
+    console.log(this.activity)
+}
+    
+
+
+let risotto = {
+    ingredients: 'Arborio Rice',
+    activity: 'Slowly Simmers'
+}
+
+dish.call(risotto);
 
 // code example for Explicit Binding
