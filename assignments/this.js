@@ -34,8 +34,13 @@ console.log(book.blurb());
 // code example for Implicit Binding
 
 // Principle 3
+function Spirit(ferments){
+    this.activity = ferments;
+}
+let ale = new Spirit('An original gravity reading of 1.055, and a final gravity of 1.010, a 5.8% abv ale should be produced.');
 
-// code example for New Binding
+console.log(ale.activity)
+
 
 // Principle 4
 
