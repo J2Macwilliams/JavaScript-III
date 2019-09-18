@@ -30,7 +30,7 @@ blurb: function(){
     console.log(`In the story of, ${this.name}, ${this.protagonist} overcomes the evil of ${this.antagonist}.`)
 }
 }
-console.log(book.blurb());
+book.blurb();
 // code example for Implicit Binding
 
 // Principle 3
