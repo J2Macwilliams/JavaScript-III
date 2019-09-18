@@ -1,7 +1,7 @@
 /* The for principles of "this";
 * in your own words. explain the four principle for the "this" keyword below.
 *
-* 1. Global Binding -When in the Global Scope, the value of *this* will be the window/console object.  
+* 1. Global / Window Binding -When in the Global Scope, the value of *this* will be the window/console object.  
 
 * 2. Implicit Binding - *this* is pointing to the object it is placed in.  Pointing to the left of the dot when the function is invoked.  
 
@@ -18,11 +18,19 @@
 
 // Principle 1
 //GLobal / Window Binding
-
+console.log(this);
 // code example for Window Binding
 
 // Principle 2
-
+const book = {
+name:'The Hobbit',
+protagonist:'Bilbo Baggins',
+antagonist:'Smaug the Dragon',
+blurb: function(){
+    console.log(`In the story of, ${this.name}, ${this.protagonist} overcomes the evil of ${this.antagonist}.`)
+}
+}
+console.log(book.blurb());
 // code example for Implicit Binding
 
 // Principle 3
